@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Aur Hero Section</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            background: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                        url("https://images.unsplash.com/photo-1542402676-25e56d01996c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") 
+                        center/cover no-repeat;
+        }
+
+        .hero-text {
+            color: white;
+            font-weight: 800;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .hero-text button {
+            border: none;
+            border-radius: 10px;
+            padding: 15px 30px;
+            margin: 15px;
+            font-size: 1.1rem;
+            font-weight: 800;
+            cursor: pointer;
+            background-color: #a16f3d; /* Dark chocolate color */
+            color: white;
+            box-shadow: inset 2px -7px 11px rgba(80, 92, 51, 0.17);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .hero-text button:hover {
+            background-color: #9d5623;
+            color: #fff;
+        }
+
+        .hero-text button a {
+            color: orange;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .hero-text button a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+            .hero-text button {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero-image">
+    <div class="hero-text">
+        <h1>Chai Aur Hero Sections</h1>
+        <button>
+            <a href="https://example.com/minimal" target="_blank">Minimal Hero Section</a>
+        </button>
+        <button>
+            <a href="https://example.com/image" target="_blank">Hero Section with Image</a>
+        </button>
+    </div>
+</header>
+
+</body>
+</html>

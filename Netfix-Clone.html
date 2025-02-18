@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <style>
+        /* Global reset */
+        body, h1, h2, h5, a, nav {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        .header {
+            background: #141414;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-family: 'Arial', sans-serif;
+            font-size: 45px;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #1a1a1a;
+            padding: 10px 30px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 10px;
+            margin: 0 15px;
+            transition: background 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        /* Search Bar */
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 5px;
+            border-radius: 20px;
+        }
+
+        .search-bar input {
+            border: none;
+            padding: 10px;
+            width: 200px;
+            border-radius: 20px;
+            outline: none;
+        }
+
+        .search-bar button {
+            padding: 10px 15px;
+            background-color: #e50914;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        .search-bar button:hover {
+            background-color: #b20710;
+        }
+
+        /* Navbar Menu for Small Screens */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar a {
+                margin: 5px 0;
+            }
+
+            .search-bar input {
+                width: 100%;
+            }
+        }
+
+        /* Footer */
+        .footer {
+            display: block;
+            color: whitesmoke;
+            font-weight: 700;
+            font-style: italic;
+            background: #1a1919;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Image Section */
+        .Image {
+            background-image: url(https://images.unsplash.com/photo-1643208589889-0735ad7218f0?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 0;
+            margin: 0;
+            background-color: white;
+        }
+
+        .pic1 {
+            width: 400px;
+            height: 500px;
+            border-radius: 15px;
+            margin: 10px;
+        }
+
+        /* Video Section */
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        iframe {
+            width: 80%;
+            height: 500px;
+            border: none;
+            border-radius: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <h1>NETFLIX</h1>
+</header>
+
+<nav class="navbar">
+    <div class="menu">
+        <a href="https://www.netflix.com/in/">Home</a>
+        <a href="https://www.netflix.com/in/">About</a>
+        <a href="https://www.netflix.com/in/">Content</a>
+        <a href="https://www.netflix.com/in/">Service</a>
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button>Search</button>
+    </div>
+</nav>
+
+<div class="Image"></div>
+
+<div>
+    <section>
+       <strong><h2 style="color: black;font-family: Arial, Helvetica, sans-serif; font-weight: 800; background: #000; color: white; gap: 10px; padding: 5px; margin: 10px;">Watchlist</h2></strong>
+       <h5>Movie-</h5>
+       <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="pic1" alt="">
+       <img src="https://images.unsplash.com/photo-1535207010348-71e47296838a?q=80&w=1885&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="pic1" alt="">
+         <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="pic1" alt="Journey">
+    </section>
+
+    <section class="section">
+       <strong><h2 style="color: black;font-family: Arial, Helvetica, sans-serif; font-weight: 800; background: #000; color: white; gap: 10px; padding: 5px; margin: 10px;">Favorite</h2></strong>
+       <h5>Movie-</h5>
+       <img src="https://images.unsplash.com/photo-1496441277571-ff23e2363e05?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="pic1" alt="">
+       <img src="https://images.unsplash.com/photo-1618052475596-a04aeafcb476?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="pic1" alt="">
+        <img src="https://images.unsplash.com/photo-1674045692313-433f7b439bf2?q=80&w=2040&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="pic1" alt="Nun">
+    </section>
+
+    <section class="section">
+       <strong><h2 style="color: black;font-family: Arial, Helvetica, sans-serif; font-weight: 800; background: #000; color: white; gap: 10px; padding: 5px; margin: 10px;">History</h2></strong>
+       <h5>Movie-</h5>
+       <img src="https://images.unsplash.com/photo-1631695117568-c56a4e039ac4?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="pic1" alt="">
+       <img src="https://images.unsplash.com/photo-1634750300728-5f64bc192f75?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="pic1" alt="">
+        <img src="https://images.unsplash.com/photo-1496440737103-cd596325d314?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="pic1" alt="Black Witch">
+    </section>
+</div>
+
+<!-- YouTube Video -->
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/KEfeMPGj-Dw" title="YouTube video" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/V8Yo_nxY9qs" title="YouTube video" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/qkaNg-0RIsM" title="YouTube video" allowfullscreen></iframe>
+</div>
+
+<footer class="footer">
+    <p>Created by: Netflix organization</p>
+    <p><a href="mailto:netflix@gmail.com">netflix@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
+

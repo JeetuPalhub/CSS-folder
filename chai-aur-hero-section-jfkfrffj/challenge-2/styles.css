@@ -1,0 +1,166 @@
+:root {
+  --primary-blue: #3b82f6;
+  --primary-blue-dark: #2563eb;
+  --gray-800: #1f2937;
+  --neutral-400: #9ca3af;
+  --neutral-900: #111827;
+
+  /* Dark mode variables */
+  --bg-dark: #111827;
+  --text-dark: #ffffff;
+  --border-dark: #374151;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.hero {
+}
+
+.hero-grid {
+}
+
+.content-col h1 {
+  font-size: 70px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+}
+
+.content-col p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.cta-group {
+
+}
+
+.sr-only {
+}
+
+.input-wrapper {
+}
+
+input[type='text'] {
+}
+
+.demo-button {
+  background-color: rgb(71, 109, 247);
+  color: #ffffff;
+  padding: 10px 20px; 
+ cursor: pointer;
+    transition: background-color 0.3s ease;
+  border: none;
+  border-radius: 10px;
+   cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.demo-button:hover {
+   background-color: #45a049;
+}
+
+.brands-section {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.trusted-by {
+  font-size: 25px;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.brand-logos {
+}
+
+.brand-logo {
+  background-color: red;
+}
+
+.image-col {
+  object-fit: cover;
+border-radius: 5px;
+border: none;
+padding: 30px 40px;
+margin: 50px;
+}
+
+.hero-image {
+  /* background-color: red; */
+}
+
+@media (min-width: 640px) {
+  .hero {
+  }
+
+  .content-col h1 {
+  }
+
+  .cta-group {
+  }
+
+  .demo-button {
+  }
+
+  .input-wrapper {
+  }
+
+  input[type='text'] {
+  }
+}
+
+@media (min-width: 768px) {
+  .content-col h1 {
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+  }
+
+  .hero-grid {
+  }
+
+  .content-col h1 {
+  }
+
+  .cta-group {
+  }
+
+  .brands-section {
+  }
+
+  .image-col {
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-grid {
+    gap: 3rem;
+  }
+}
+
+.dark-mode-toggle {
+}
+
+.dark-mode-toggle:hover {
+}
+
+body.dark {
+}
+
+.dark-mode-toggle {
+}
+
+.dark-mode-toggle:hover {
+}
+
+input[type='text'].dark {
+}
+
+input[type='text']::placeholder {
+}
